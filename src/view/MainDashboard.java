@@ -85,7 +85,7 @@ public class MainDashboard extends JFrame {
 
 		if (!loggedInUser.isAdmin()) {
 			studentsButton.setEnabled(false);
-			studentsButton.setText("🔒 Students (Admin Only)");
+			studentsButton.setText("🔒 Manage Students (Admin Only)");
 		} else {
 			studentsButton.addActionListener(e -> {
 				new StudentListView(this, loggedInUser).setVisible(true);
@@ -216,3 +216,4 @@ public class MainDashboard extends JFrame {
 			+ "    🔄 Borrowed: " + activeBorrows);
 	}
 }
+
